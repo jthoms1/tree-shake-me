@@ -1,0 +1,25 @@
+{
+  "name": "tree-shake-me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack --optimize-minimize",
+    "rollup": "rollup -c rollup.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^6.2.0",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-es2015-native-modules": "^6.6.0",
+    "copy-webpack-plugin": "^3.0.1",
+    "rollup": "^0.26.3",
+    "webpack": "^2.1.0-beta.8",
+    "rollup-plugin-node-resolve": "^1.5.0"
+  },
+  "dependencies": {
+    "poor-math-skills": "0.0.1"
+  }
+}
