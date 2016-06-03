@@ -10,8 +10,8 @@ module.exports = {
     filename: 'bundle.webpack.js'
   },
   resolve: {
-    // I had hoped this would work, but nope.
-    packageMains: ['webpack', 'browser', 'web', 'browserify', ['jam', 'main'], 'main', 'jsnext:main']
+    // This is the magic line that allows webpack to resolve jsnext:main
+    mainFields: ["jsnext:main", "main", "browser"]
   },
   module: {
     loaders: [
