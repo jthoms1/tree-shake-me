@@ -26,11 +26,13 @@ package.json -> "main" points to commonjs
 package.json -> "jsnext:main" points to es2015 modules
 ```js
 import {cube} from 'poor-math-skills';
+// vs
+import {cube} from 'poor-math-skills/ecm';
 ```
 
 **Results**
 - *Rollup* pulls in only the functions required
-- *Webpack* pulls in all functions and appears to only pull in the CommonJS module not the es2015 module.
+- *Webpack* pulls in all functions and appears to only pull in the CommonJS module not the es2015 module. If you explicitly define the subfolder of ecm it will pull only the required function otherwise it does not follow "jsnext:main".
 
 ## dependency-with-only-es2015
 Demonstrates the the use of NPM dependencies on packages containing only es2015 modules.
