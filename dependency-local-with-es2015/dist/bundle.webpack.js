@@ -1,0 +1,1 @@
+!function(r){function t(o){if(n[o])return n[o].exports;var e=n[o]={i:o,l:!1,exports:{}};return r[o].call(e.exports,e,e.exports,t),e.l=!0,e.exports}var n={};return t.m=r,t.c=n,t.p="",t(t.s=1)}([function(r,t,n){"use strict";function o(r){return r*r*r*r}t.a=o},function(r,t,n){"use strict";var o=n(0);console.log(o.a.call(void 0,5))}]);
